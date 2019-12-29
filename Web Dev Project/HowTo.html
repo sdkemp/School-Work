@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>How to</title>
+<link rel="stylesheet" href="Howto.css">
+<script type="text/javascript">
+var filledOut = true;
+	function menuOnHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "#B1B1B1";
+		
+	
+	
+	}
+	function menuOutHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "white";
+	}
+	function validateForm() 
+	{
+		
+		var city = document.forms["search"]["city"];    
+		var state = document.forms["search"]["state"]; 
+		var zip = document.forms["search"]["zip"]; 
+		var email = document.forms["search"]["email"]; 
+		if(city.value == "" || state.value == "" || zip.value == "" || email.value == "")
+		{
+			alert("Please fully fill out form before submitting.");
+			return false;
+			filledOut = false;
+			
+		}
+		else{
+			return true;
+		}
+
+		if(filledOut == false)
+		{
+			
+		}
+  		
+		
+		
+		
+		
+			
+	}	
+
+		
+
+
+
+
+</script>
+</head>
+
+<body>
+<div id="banner">
+	<img src="Banner (2).png" alt="Website Banner">
+</div>
+	
+<div id="navigator">
+	<h2 onmouseover="menuOnHover('homeMenu')"  onmouseout= "menuOutHover('homeMenu')" id="homeMenu"><a href="index.html">Home</a></h2>
+	<a href="History.html"><h2 id="historyMenu" onmouseover="menuOnHover('historyMenu')" onmouseout= "menuOutHover('historyMenu')">History</h2></a>
+	<h2 onmouseover="menuOnHover('olympicsMenu')" onmouseout= "menuOutHover('olympicsMenu')" id="olympicsMenu"> <a href="Olympics.html">Olympics</a></h2>
+	<h2 onmouseover="menuOnHover('skeetMenu')" onmouseout= "menuOutHover('skeetMenu')" id="skeetMenu"><a href="Skeet.html">Skeet Shooting</a></h2>
+	<h2 onmouseover="menuOnHover('trapMenu')" onmouseout= "menuOutHover('trapMenu')"id="trapMenu"><a href="Trap.html">Trap Shooting</a></h2>
+	<h2 onmouseover="menuOnHover('howtoMenu')" onmouseout= "menuOutHover('howtoMenu')"id="howtoMenu"><a href="Howto.html">How To</a></h2>
+</div>
+
+
+
+<div id="header">
+<h1>Want to go shoot clay targets yourself?</h1>
+<h3>It's easier than you think. Here's a quick checklist of things you need before going.</h3>
+
+</div>
+
+
+<div id="list">
+
+<div id="one" style="height: 117px; width: 1530px;">
+<h1 id="number">1.</h1> <h1>Decide what type of game you want to play</h1>
+</div>
+<p style="margin-left:30px;">You should do some research on what type of game interests you. Look online, watch some videos, and do some research to see what piques your interest. There are a ton more clay target sports
+than the ones covered on this website, and there is for sure one that fits for you.</p>
+<img src="one.jpg" alt="one" height="379" width="1014">
+
+
+
+<div id="one" style="height: 117px; width: 1530px;">
+<h1 id="number">2.</h1> <h1 style="width: 1056px">Find a shotgun range near you</h1>
+</div>
+<p style="margin-left:30px;">Once you have decided what game best suits you, you next need to look for a shotgun range near you. You'd be suprised at how many ranges are actually around you. Once you have found a place that looks
+good to you, you should double check some things. First, check whether or not the range you have selected is open to the public. Some ranges can be members-only, and it's better to save yourself your time, 
+and make sure beforehand.
+After this, you need to then check if the range has shotguns available for rent. 
+This of course does not apply to you if you have your own, but if you're a first timer, you don't want to show up to a range, and not be able to shoot.</p>
+<img src="two.jpg" alt="two">
+
+
+<div id="one" style="height: 117px; width: 1530px;">
+<h1 id="number">3.</h1> <h1 style="width: 1056px">Go Shooting!</h1>
+</div>
+<p style="margin-left:30px;">After arriving to your chosen range, check it, rent a shotgun if you need it buy some ammo, and then you're good! Going clay target shooting is alot than you think. Don't forget the
+rules of gun safety, and most importantly, have fun.</p>
+<img src="three.jpg" alt="two">
+
+<div id="form" >
+<h2>Having trouble finding a range? Fill out the form below, and we'll email you the 5 closest ranges to you.</h2>
+
+<form onsubmit="return validateForm()" name="search">
+City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="city"><br><br>
+State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="state"><br><br>
+Zip Code:&nbsp;&nbsp;&nbsp; <input type="text" name="zip"><br><br>
+E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email"><br><br>
+<input id="submit" type="submit" value="Submit">
+
+
+
+
+
+</form>
+</div>
+
+
+</div>
+</body>
+
+</html>

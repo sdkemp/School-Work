@@ -1,0 +1,118 @@
+﻿#banner {
+	
+	text-align:center;
+	padding: 10px;
+	margin:10px;
+	
+	background-color:white;
+	
+	
+}
+
+#navigator {
+	
+	margin:0 auto;width:900px;text-align:center;
+	
+	border-style:solid;
+}
+
+#navigator h2{
+	
+	display:inline-block;margin:10px;padding: 10px;
+	border-bottom-style:solid;
+	
+	
+	font-family: Helvetica, sans-serif;
+	font-weight:lighter;
+	
+	
+		
+}
+
+#navigator a{
+	
+	text-decoration:none;
+	color: black;
+
+	
+}
+
+body {
+	
+	font-family: Helvetica, sans-serif;
+	height:3000px;
+}	
+
+#header {
+	
+	margin-top:40px;
+	text-align:center;
+}
+
+
+#list {
+	margin-left:100px;
+	margin-top:60px;
+	width:80%;
+}
+
+#one {
+	height:50px;
+	margin-bottom:10px;
+}
+
+#list h1 {
+	font-size:40pt;
+	
+	float:left;
+	border-bottom-style:solid;
+	padding-bottom:10px;
+}
+
+#number {
+	width:7%;
+	
+}
+
+#list div{
+
+	height:300px;
+	
+	
+}
+
+p {
+	font-size:20pt; 
+}
+
+img {
+	margin:0 auto;
+}
+
+#form {
+	
+	margin-top:150px;
+	border-style:solid;
+	padding:10px;
+	
+}
+
+#submit{
+	margin-left:10px;
+}
+
+input[type=text] {
+	border: 2px solid black;
+	border-radius: 4px;
+  }
+
+input[type=submit]
+{
+	background-color: white;
+	border-style: solid;
+	padding:15px;
+	font-size: 18px;
+	text-decoration: none;
+	border-color:black;
+	width:30%
+}

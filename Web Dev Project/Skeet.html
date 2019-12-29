@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Skeet Shooting</title>
+<link rel="stylesheet" href="skeet.css">
+<style type="text/css">
+.auto-style1 {
+	margin-top: 82px;
+}
+
+
+
+</style>
+<script type="text/javascript">
+function showText(id)
+{
+		var e = document.getElementById(id);
+        if ( e.style.visibility == 'visible' )
+            e.style.visibility = 'hidden';
+        else
+            e.style.visibility = 'visible';
+	
+	
+}
+function menuOnHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "#B1B1B1";
+		
+	
+	
+	}
+	function menuOutHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "white";
+	}
+
+
+</script>
+</head>
+
+<body>
+<div id="banner">
+	<img src="Banner (2).png" alt="Website Banner">
+</div>
+	
+<div id="navigator">
+    <h2 onmouseover="menuOnHover('homeMenu')"  onmouseout= "menuOutHover('homeMenu')" id="homeMenu"><a href="index.html">Home</a></h2>
+    <a href="History.html"><h2 id="historyMenu" onmouseover="menuOnHover('historyMenu')" onmouseout= "menuOutHover('historyMenu')">History</h2></a>
+    <h2 onmouseover="menuOnHover('olympicsMenu')" onmouseout= "menuOutHover('olympicsMenu')" id="olympicsMenu"> <a href="Olympics.html">Olympics</a></h2>
+    <h2 onmouseover="menuOnHover('skeetMenu')" onmouseout= "menuOutHover('skeetMenu')" id="skeetMenu"><a href="Skeet.html">Skeet Shooting</a></h2>
+    <h2 onmouseover="menuOnHover('trapMenu')" onmouseout= "menuOutHover('trapMenu')"id="trapMenu"><a href="Trap.html">Trap Shooting</a></h2>
+    <h2 onmouseover="menuOnHover('howtoMenu')" onmouseout= "menuOutHover('howtoMenu')"id="howtoMenu"><a href="Howto.html">How To</a></h2>
+    </div>
+
+<div id="info">
+<h1>Skeet Shooting</h1>
+<p>One of the many sports in Clay Target Shooting, is skeet shooting. It invovles a field with 8 different stations, and two separate target houses - a high house and a low house.</p>
+<p>If you would like to know more, an interactible field is available below, just click on a section to expand it.</p>
+
+</div>
+
+<div id="field">
+<img id="skeetfield " src="SkeetFieldFull.png" alt="field">
+
+<div id="houses" class="auto-style1" style="left: 908px; top: 666px" onclick="showText(houseText)">
+<button class="button" style="left: 0px; top: 0px" onclick="showText('houseText')">Skeet Houses</button>
+<p id="houseText" style=" top: 70px; left:0px;">A skeet field is comprised of two different houses, a low house and a high house. Each house contains a clay target thrower,
+and upon button press, will launch a clay target towards the center of the field.</p>
+</div>
+
+
+
+</div>
+
+<div id="generalInfo" style="left: 115px; top: 732px" >
+<button class="button" onclick="showText('ginfo')">How to Play Skeet</button>
+<div id="ginfo" style=" top: 60px">
+<p>A game of skeet consists of rounds, with each round being a total of 25 shots. The goal is to hit all 25 shots across the field.</p>
+<p>Each player rotates through all of the 8 stations, with each station group requiring them to make a different amount of shots.</p>
+<p>Each station requires the shooter to make a minimum of two shots, one from the high house, and one from the low.</p>
+<p>Furthur information about each station is given below.</p>
+
+</div>
+
+</div>
+
+<div id="firstStation" style="left: 247px; top: 1500px">
+<button class="button" onclick="showText('finfo')">Doubles Stations</button>
+<div id="finfo" style=" top: 60px">
+<p>A player begins a round at these two stations. On each of these stations, the player makes 4 shots. The first two are made in a "doubles" fashion. This means that both houses throw a clay at the same time, and the play must 
+shoot both. The second set of shots are made singularly, with the player calling for each house indivudually. </p>
+<p>Stations 6 and 7 are also doubles stations, and the player repeats what they did on stations 1 and 2.</p>
+</div>
+
+<div id="secondStation" style="left: 644px; top: 45px">
+<button class="button" onclick="showText('sinfo')">Singles Stations</button>
+<div id="sinfo" style=" top: 60px">
+<p>For stations 3, 4, 5, and 6, the player makes only two shots each at these stations. They will call for each house, one at a time, before moving on to the next station.</p>
+
+</div>
+
+
+
+
+</div>
+
+<div id="middleStation" style="left: 495px; top: -453px" >
+<button class="button" onclick="showText('minfo')">Singles Stations</button>
+<div id="minfo" style=" top: 60px">
+<p>Station 8 is a unique station. It plays like the other singles stations, but instead the player is trying to hit the clays as they are coming towards them.</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>

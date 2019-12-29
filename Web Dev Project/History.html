@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Homepage</title>
+<link rel="stylesheet" href="History.css">
+<script type="text/javascript">
+
+
+
+
+function menuOnHover(id)
+{
+	var e = document.getElementById(id);
+	e.style.backgroundColor = "#B1B1B1";
+	
+
+
+}
+function menuOutHover(id)
+{
+	var e = document.getElementById(id);
+	e.style.backgroundColor = "white";
+}
+
+var allShown = false;
+
+function showDate(id)
+{
+		var x = document.getElementById(id);
+		textAnimation(id);
+        if (x.style.visibility == 'visible')
+		{
+			 x.style.visibility = 'hidden';
+		}   
+        else
+		{
+			 x.style.visibility = 'visible';
+		}
+        
+		
+		var slice = 0;
+		var slice = parseInt(id.slice(4));
+		if(buttonArray[slice] == 0)
+		{
+			buttonArray[slice] = parseInt(1);
+		}
+		else{
+			buttonArray[slice] = parseInt(0);
+		}
+		
+		
+		
+		
+	
+	
+}
+
+
+function showAll()
+{
+
+		if(allShown == false)
+		{
+			for(var x = 1; x < 12; x++)
+			{
+				var id = ("info"+x);
+				var y = document.getElementById(id);
+				
+				y.style.visibility = 'visible';
+		
+			}
+			
+			allShown = true;
+
+		}
+		else
+		{
+
+			for(var x = 1; x < 12; x++)
+			{
+				var id = ("info"+x);
+				var y = document.getElementById(id);
+				
+				y.style.visibility = 'hidden';
+	
+	
+			}
+			allShown = false;
+
+
+		}
+		
+
+	
+	
+
+	
+
+
+	
+
+}
+
+
+
+</script>
+</head>
+
+
+<body>
+<div id="banner">
+	<img src="Banner (2).png" alt="Website Banner">
+</div>
+	
+<div id="navigator">
+<h2 onmouseover="menuOnHover('homeMenu')"  onmouseout= "menuOutHover('homeMenu')" id="homeMenu"><a href="index.html">Home</a></h2>
+<a href="History.html"><h2 id="historyMenu" onmouseover="menuOnHover('historyMenu')" onmouseout= "menuOutHover('historyMenu')">History</h2></a>
+<h2 onmouseover="menuOnHover('olympicsMenu')" onmouseout= "menuOutHover('olympicsMenu')" id="olympicsMenu"> <a href="Olympics.html">Olympics</a></h2>
+<h2 onmouseover="menuOnHover('skeetMenu')" onmouseout= "menuOutHover('skeetMenu')" id="skeetMenu"><a href="Skeet.html">Skeet Shooting</a></h2>
+<h2 onmouseover="menuOnHover('trapMenu')" onmouseout= "menuOutHover('trapMenu')"id="trapMenu"><a href="Trap.html">Trap Shooting</a></h2>
+<h2 onmouseover="menuOnHover('howtoMenu')" onmouseout= "menuOutHover('howtoMenu')"id="howtoMenu"><a href="Howto.html">How To</a></h2>
+</div>
+
+<div id="welcome">
+<h1>A Brief History of Clay Target Shooting</h1>
+<p>Clay target shooting is actually a quite recent invention. Before the inception of the modern clay target, shotgun shooting sports would involve live animals, making it more of a luxury than a sport that 
+anyone could join. However, once the clay target was invented and began to be used in earnest, the sport quickly caught on, and by the mid 1900's, the sports that are known and played today were created.</p>
+
+<p>Below is a short timeline of the major events across the short history of the sport. Simply click on a date if you would like to know more about it.</p>
+</div>
+<div id="showall" style="left: 675px; top: 624px" >
+<button id="showbutton" class="button1" onclick="showAll()" style="left: -10px; top: 39px">Show/Hide All</button>
+</div>
+
+
+
+
+<div id="date" style="left: 402px; top: 730px" >
+<button class="button" onclick="showDate('info1')" style="left: -10px; top: 52px">1860's</button>
+</div>
+
+
+
+<div id="date" style="left: 402px; top: 730px" >
+<button class="button" onclick="showDate('info1')" style="left: -10px; top: 52px">1860's</button>
+</div>
+
+<div id="info1" style="left: 21px; top: 649px">
+<h3>1860's<br>
+First Use of Artificial Targets</h3>
+<p>Before clay targets were invented, the first artifical targets were instead simple glass balls. A mechanical trap was used to launch them into the air for shooting.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 962px; top: 875px">
+<button class="button" onclick="showDate('info2')" style="left: -16px; top: 48px">1882</button>
+
+</div>
+
+<div id="info2" style="left: 1143px; top: 774px">
+<h3>1882<br>
+First True Clay Targets</h3>
+<p>The first breakable clay targets were invented in the USA by George Ligowsky.</p>
+<p>Described as a saucer-shaped pice of bittle crockery. These discs were launched by a springboard trap.</p>
+
+
+</div>
+
+
+
+<div id="date" style="left: 402px; top: 935px">
+<button class="button" onclick="showDate('info3')" style="top: 50px; left: -31px;">1888</button>
+</div>
+<div id="info3" style="left: 40px; top: 897px">
+<h3>1888<br>
+Modern Clay Targets invented</h3>
+<p>Clay targets were now being made with lime and pitch, the same way that they are created today.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 962px; top: 1057px">
+<button class="button" onclick="showDate('info4')" style="top: 51px; left: -13px;">1900</button>
+</div>
+<div id="info4" style="left: 1154px; top: 1006px">
+<h3>1900<br>
+Olympics introduces Shooting</h3>
+<p>The Olympics offically introduced clay target shooting to their lineup of games. The sport was then know as Olympic Trap.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 402px; top: 1157px">
+<button class="button" onclick="showDate('info5')" style="top: 50px; left: -31px;">1921</button>
+</div>
+<div id="info5" style="left: 54px; top: 1140px">
+<h3>1921<br>
+Use of Live Game Banned</h3>
+<p>In the United Kingdom, this marked an end of an era, where using live game in shooting sports was outlawed.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 962px; top: 1193px">
+<button class="button" onclick="showDate('info6')" style="top: 51px; left: -13px;">1923</button>
+</div>
+<div id="info6" style="left: 1154px; top: 1262px">
+<h3>1923<br>
+Game of Skeet invented</h3>
+<p>In this year, the modern variation of skeet was created by William Harnden Foster. The game was orignally played in a 360 degree circle, but was cut down into just a half circle. In addition, William added a second
+trap house, making a total of two.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 402px; top: 1351px">
+<button class="button" onclick="showDate('info7')" style="top: 50px; left: -31px;">1950</button>
+</div>
+<div id="info7" style="left: 62px; top: 1374px">
+<h3>1950<br>
+Olympic Trap Introduced</h3>
+<p>The modern variation of Olympic Trap was introduced to the Olympics on this year. Olympic Trap uses multitude of traps that randomly fire, as oppposed to normal trap, that simply uses one machine.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 962px; top: 1485px">
+<button class="button" onclick="showDate('info8')" style="top: 51px; left: -13px;">1968</button>
+</div>
+<div id="info8" style="left: 1162px; top: 1511px">
+<h3>1968<br>
+Olympic Skeet Introduced</h3>
+<p>On this year, Olymic Skeet was introduced to the Olympics. It plays much like the regular game of skeet, but is more regulated, and the dics are thrown at a much faster speed.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 402px; top: 1635px">
+<button class="button" onclick="showDate('info9')" style="top: 50px; left: -15px;">1980's</button>
+</div>
+<div id="info9" style="left: 60px; top: 1646px">
+<h3>1980's<br>
+Automatic Clay Throwers Introduced</h3>
+<p>In the 80's the use and manufacturing of automatic clay throwers began to grow. This would help grow the sport much larger in size, as it allowed more people to own and operate them.</p>
+</div>
+
+
+<div id="date" style="left: 962px; top: 1841px">
+<button class="button" onclick="showDate('info10')" style="top: 51px; left: -13px;">1996</button>
+</div>
+<div id="info10" style="left: 1167px; top: 1868px">
+<h3>1996<br>
+Olympic Shooting Divided by Gender</h3>
+<p>This year marked the first Olympic Games where shooting was seperated by gender. Before this point, men and women would compete against each other for the medal.</p>
+
+
+</div>
+
+
+<div id="date" style="left: 402px; top: 2055px">
+<button class="button" onclick="showDate('info11')" style="top: 50px; left: -31px;" id="today" >2019</button>
+</div>
+<div id="info11" style="left: 67px; top: 2046px">
+<h3>TODAY<br>
+Modern Day</h3>
+<p>Today, Clay Target Shooting is enjoyed by a many number of people, old and young. Currently there are a number of high schools introducing the sport to younger people, and the sport continues to grow. Currently,
+three different games are in the Olympics: Olympic Skeet, Olympic Trap, and Olympic Double Trap.</p>
+
+
+</div>
+
+
+<div id="timeline" style="left: 352px; top: 813px">
+<img src="timeline.png" alt="timeline">
+</div>
+
+
+
+</body>
+
+</html>

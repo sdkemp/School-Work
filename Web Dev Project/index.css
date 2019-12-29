@@ -1,0 +1,93 @@
+﻿#banner {
+	
+	text-align:center;
+	padding: 10px;
+	margin:10px;
+	
+	background-color:white;
+	
+	
+}
+
+#navigator {
+	
+	margin:0 auto;width:900px;text-align:center;
+	
+	border-style:solid;
+}
+
+#navigator h2{
+	
+	display:inline-block;margin:10px;padding: 10px;
+	border-bottom-style:solid;
+	
+	
+	font-family: Helvetica, sans-serif;
+	font-weight:lighter;
+	
+	
+		
+}
+
+#navigator a{
+	
+	text-decoration:none;
+	color: black;
+
+	
+}
+
+a{
+	
+	text-decoration:none;
+	color: black;
+
+}
+
+#main {
+
+	
+	height:1000px;
+	padding: 10px;
+	margin:10px;
+	font-family: Helvetica, sans-serif;
+	
+	
+}
+
+#main div{
+	
+	
+	
+	margin:0 auto;
+	width:70%;
+	
+	margin-bottom: 10px;
+	padding: 10px;
+	
+}
+
+#main h1{
+	
+	border-bottom-style:solid;
+	width:60%;
+	
+}
+
+#main p{
+	float:left;
+	font-size:12pt;
+	padding:5px;
+	
+}
+
+#welcome{
+	
+	
+}
+
+#History div {
+	height:550px;
+	
+	
+}

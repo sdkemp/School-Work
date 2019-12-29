@@ -1,0 +1,100 @@
+﻿#banner {
+	
+	text-align:center;
+	padding: 10px;
+	margin:10px;
+	
+	background-color:white;
+	
+	
+}
+
+#navigator {
+	
+	margin:0 auto;width:900px;text-align:center;
+	
+	border-style:solid;
+}
+
+#navigator h2{
+	
+	display:inline-block;margin:10px;padding: 10px;
+	border-bottom-style:solid;
+	
+	
+	font-family: Helvetica, sans-serif;
+	font-weight:lighter;
+	
+	
+		
+}
+
+#navigator a{
+	
+	text-decoration:none;
+	color: black;
+
+	
+}
+
+body {
+	
+	font-family: Helvetica, sans-serif;
+	height:2000px;
+}
+
+#welcome {
+	padding-top:50px;
+	margin:0 auto;
+	font-size:20pt;
+	width:70%;
+	
+	
+	}
+	
+#welcome h1{
+	border-bottom-style:solid;
+}
+
+#yearsMen {
+	padding-top:50px;
+	
+	width:85%;
+	
+	font-size:12.5pt;
+	border-spacing:5em;
+	
+	
+}
+
+#yearsMen h1{
+	text-align:center;
+}
+
+table,th,td {
+	border:1px solid black;
+	padding:3px;
+}
+
+
+.tables {
+	
+	padding:5px;
+	
+}
+
+
+
+#end{
+	text-align:center;
+	padding-top:50px;
+}
+
+
+
+
+
+
+
+
+

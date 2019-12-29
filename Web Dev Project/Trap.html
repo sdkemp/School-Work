@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Skeet Shooting</title>
+<link rel="stylesheet" href="trap.css">
+<style type="text/css">
+.auto-style1 {
+	margin-top: 82px;
+}
+
+
+</style>
+<script type="text/javascript">
+function showText(id)
+{
+		var e = document.getElementById(id);
+        if ( e.style.visibility == 'visible' )
+            e.style.visibility = 'hidden';
+        else
+            e.style.visibility = 'visible';
+
+	
+	
+}
+function menuOnHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "#B1B1B1";
+		
+	
+	
+	}
+	function menuOutHover(id)
+	{
+		var e = document.getElementById(id);
+		e.style.backgroundColor = "white";
+	}
+
+
+</script>
+</head>
+
+<body>
+<div id="banner">
+	<img src="Banner (2).png" alt="Website Banner">
+</div>
+	
+<div id="navigator">
+    <h2 onmouseover="menuOnHover('homeMenu')"  onmouseout= "menuOutHover('homeMenu')" id="homeMenu"><a href="index.html">Home</a></h2>
+    <a href="History.html"><h2 id="historyMenu" onmouseover="menuOnHover('historyMenu')" onmouseout= "menuOutHover('historyMenu')">History</h2></a>
+    <h2 onmouseover="menuOnHover('olympicsMenu')" onmouseout= "menuOutHover('olympicsMenu')" id="olympicsMenu"> <a href="Olympics.html">Olympics</a></h2>
+    <h2 onmouseover="menuOnHover('skeetMenu')" onmouseout= "menuOutHover('skeetMenu')" id="skeetMenu"><a href="Skeet.html">Skeet Shooting</a></h2>
+    <h2 onmouseover="menuOnHover('trapMenu')" onmouseout= "menuOutHover('trapMenu')"id="trapMenu"><a href="Trap.html">Trap Shooting</a></h2>
+    <h2 onmouseover="menuOnHover('howtoMenu')" onmouseout= "menuOutHover('howtoMenu')"id="howtoMenu"><a href="Howto.html">How To</a></h2>
+    </div>
+
+<div id="info">
+<h1>Trap Shooting</h1>
+<p>Another one of the many sports in Clay Target Shooting, is trap shooting. It invovles a field with 5 different stations, but only one house, called the trap house.</p>
+<p>If you would like to know more, an interactible field is available below, just click on a section to expand it.</p>
+
+</div>
+
+<div id="field">
+<img id="skeetfield" src="trapfield.png" alt="field">
+
+<div id="houses" class="auto-style1" style="left: 846px; top: 581px" onclick="showText(houseText)">
+<button class="button" style="left: 0px; top: 0px" onclick="showText('houseText')">Trap House</button>
+<p id="houseText" style=" top: 70px; left:0px;">The clay target house for trap holds only one clay target thrower, but the thrower itself is constantly rotating.
+Once the shooter calls pull, the house will fire a target in a random direction, adding difficulty to the shot.</p>
+</div>
+
+
+
+</div>
+
+<div id="generalInfo" style="left: 115px; top: 732px" >
+<button class="button" onclick="showText('ginfo')">How to Play Trap</button>
+<div id="ginfo" style=" top: 60px">
+<p>A game of trap consists of 5 different stations, with each player rotating between each station. Each player will take a single shot at a station, and then rotate to the right. The 
+round is over when the shooter has completed 25 shots.</p>
+
+</div>
+
+</div>
+
+
+
+<div id="middleStation" style="left: 669px; top: 1000px" >
+<button class="button" onclick="showText('minfo')">Five Stations</button>
+<div id="minfo" style=" top: 60px">
+<p>Trap consists of 5 different stations that all are at widening angles towards the trap house. A game of trap can be played by up to 5 people at a time, with each player moving to the rightmost station after they take
+a shot. The game can also be increased in difficulty, if the player wishes, by standing further back in the lane. A typical station has an automatic thrower that will listen to a shooters call.</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
